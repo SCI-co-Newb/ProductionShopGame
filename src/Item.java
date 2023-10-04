@@ -1,11 +1,11 @@
 public class Item {
     private String name;
-    private int moneyRequired;
+    private int price;
     private int userQuantity;
 
-    public Item(String name, int moneyRequired) {
+    public Item(String name, int price) {
         this.name = name;
-        this.moneyRequired = moneyRequired;
+        this.price = price;
         this.userQuantity = 0;
     }
 
@@ -15,8 +15,8 @@ public class Item {
         return this.name;
     }
 
-    public int getMoneyRequired() {
-        return this.moneyRequired;
+    public int getPrice() {
+        return this.price;
     }
 
     public int getUserQuantity() {
@@ -29,9 +29,9 @@ public class Item {
         this.name = newName;
     }
 
-    public void setMoneyRequired(int newMoneyRequired) {
-        if (newMoneyRequired >= 0) {
-            this.moneyRequired = newMoneyRequired;
+    public void setPrice(int newPrice) {
+        if (newPrice >= 0) {
+            this.price = newPrice;
         }
     }
 
