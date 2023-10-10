@@ -30,8 +30,8 @@ public class UserShop {
         System.out.println();
     }
 
-    public void displayUpdatedItem(Item item) {
-        System.out.println("\n------------\nUPDATED ITEM\n------------");
+    public void displayItem(Item item) {
+        System.out.println("\n-------------\nSELECTED ITEM\n-------------");
         System.out.println(item.getName() + " " + item.getUserQuantity());
         System.out.println();
     }
